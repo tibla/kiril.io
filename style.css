@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 1924px;
+    height: 7210px;
+    background: linear-gradient(blue,green);
+}
+img{
+    width: 2024px;
+    height: 1800px;  
+}
+span{
+    
+    font-size: 200px;
+}
