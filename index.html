@@ -1,183 +1,21 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Древний Египет — Мобильная версия</title>
-  <style>
-    :root{
-      --accent:#c48b2f;
-      --bg:#fcf8f1;
-      --text:#222;
-      --muted:#6b6b6b;
-      --maxw:900px;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:18px}
-    header{display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#f6e7c7,#e6c78a);display:flex;align-items:center;justify-content:center;font-weight:700;color:#6b3f0b}
-    h1{font-size:20px;margin:0}
-    p.lead{margin:6px 0 18px;color:var(--muted);font-size:14px}
-
-    /* hero */
-    .hero{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 18px rgba(42,33,17,0.06)}
-    .hero .image{height:180px;background:linear-gradient(180deg,#e8d6a7,#f6ecd6);display:flex;align-items:center;justify-content:center}
-    .hero img{width:100%;height:180px;object-fit:cover;display:block}
-    .hero .content{padding:12px}
-    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
-
-    /* sections */
-    section{margin-top:16px}
-    .card{background:#fff;padding:12px;border-radius:12px;box-shadow:0 4px 14px rgba(42,33,17,0.04)}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    .grid.single{grid-template-columns:1fr}
-    .fact{padding:10px;border-radius:10px;background:linear-gradient(180deg,#fff,#fff)}
-    .muted{color:var(--muted);font-size:13px}
-
-    /* timeline */
-    .timeline{display:flex;flex-direction:column;gap:10px}
-    .time-item{display:flex;gap:10px;align-items:flex-start}
-    .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:6px}
-
-    /* gallery */
-    .gallery{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
-    .gallery img{height:120px;border-radius:10px;object-fit:cover}
-
-    footer{margin:18px 0 80px;font-size:13px;color:var(--muted);text-align:center}
-
-    /* responsive text sizes */
-    @media (min-width:480px){h1{font-size:22px}.hero .image{height:240px}.hero img{height:240px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">Е</div>
-        <div>
-          <h1>Древний Египет</h1>
-          <div class="muted">Кратко о фараонах, пирамидax и Ниле</div>
-        </div>
-      </div>
-      <a class="btn" href="#overview">Читать</a>
-    </header>
-
-    <main>
-      <section class="hero" id="overview">
-        <div class="image">
-          <!-- Замените src на ссылку на картинку (пример: изображение пирамид). По умолчанию — заглушка -->
-          <img src="images/pyramid.jpg" alt="Пирамиды Гизы (замените изображение)" />
-        </div>
-        <div class="content">
-          <p class="lead">Древний Египет — одна из величайших цивилизаций истории. Здесь краткое руководство для мобильного просмотра:</p>
-          <a class="btn" href="#timeline">Узнать больше</a>
-        </div>
-      </section>
-
-      <section>
-        <div class="card">
-          <h2 style="margin-top:0">Быстрые факты</h2>
-          <div class="grid single">
-            <div class="fact">
-              <strong>Период существования</strong>
-              <div class="muted">ок. 3100 до н.э. — 332 до н.э. (падение при Александре Македонском)</div>
-            </div>
-            <div class="fact">
-              <strong>Главные достижения</strong>
-              <div class="muted">пирамиды, письменность (иёроглифы), инженерия, медицина, астрономия</div>
-            </div>
-            <div class="fact">
-              <strong>Река Нил</strong>
-              <div class="muted">Источник плодородия: ежегодные разливы обеспечивали урожаи</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="card">
-          <h2>Краткая хронология</h2>
-          <div class="timeline">
-            <div class="time-item">
-              <div class="dot"></div>
-              <div>
-                <strong>Додинастический период</strong>
-                <div class="muted">до 3100 до н.э. — становление государственности</div>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="dot"></div>
-              <div>
-                <strong>Раннее царство / Старое царство</strong>
-                <div class="muted">ок. 2686–2181 до н.э. — эпоха строительства пирамид</div>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="dot"></div>
-              <div>
-                <strong>Новое царство</strong>
-                <div class="muted">ок. 1550–1077 до н.э. — золотой век, Рамзес II, Тутанхамон</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="card">
-          <h2>Интересные факты</h2>
-          <div class="grid">
-            <div class="fact">
-              <strong>Мумии и погребения</strong>
-              <div class="muted">Египтяне верили в загробную жизнь и мастерски мумифицировали тела</div>
-            </div>
-            <div class="fact">
-              <strong>Письменность</strong>
-              <div class="muted">Иероглифы — комбинация логограмм и фонограмм</div>
-            </div>
-            <div class="fact">
-              <strong>Женщины и власть</strong>
-              <div class="muted">Были влиятельные царицы — Хатшепсут, Клеопатра (поздний период)</div>
-            </div>
-            <div class="fact">
-              <strong>Наука</strong>
-              <div class="muted">Медицина и хирургия были развиты — рецепты и методы записывали на папирусе</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="card">
-          <h2>Галерея (замените изображения)</h2>
-          <div class="gallery">
-            <!-- Подставьте свои ссылки в src или замените папку images/ -->
-            <img src="images/pyramid1.jpg" alt="Пирамиды" />
-            <img src="images/sphinx.jpg" alt="Сфинкс" />
-            <img src="images/tomb.jpg" alt="Гробница" />
-          </div>
-          <p class="muted" style="margin-top:8px">Совет: замените файлы в папке <code>images/</code> на реальные фотографии (jpg, png) — тогда сайт будет выглядеть живее.</p>
-        </div>
-      </section>
-
-      <section>
-        <div class="card">
-          <h2>Как использовать</h2>
-          <ol style="padding-left:18px;margin:0">
-            <li>Скопируйте этот HTML в файл <code>index.html</code> на телефоне или хосте.</li>
-            <li>Создайте папку <code>images/</code> рядом с файлом и положите туда картинки с названиями, указанными в теге <code>img</code>.</li>
-            <li>Откройте файл в мобильном браузере (или используйте "Open with" в файловом менеджере).</li>
-          </ol>
-        </div>
-      </section>
-
-    </main>
-
-    <footer>
-      Сделано для мобильного просмотра • Можно расширить: добавить карту Нила, викторину или таймлайн с деталями.
-    </footer>
-  </div>
+    <div class="box">
+        <h1>DOWNLOAD CHEAT FOR ROBLOX</h1>
+        <img src="https://i.ytimg.com/vi/19_uKMFAax8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDcRxICWiN93FUwDagEmS4hp2yOHA" alt="">
+        <h1>FREE CHEAT <br>| <br>| <br>\/ </h1><br><br><br><br>
+       <a href="file/test.txt"  download="CHEAT FOR ROBLOX 2025">
+           <button>DOWNLOAD NOW FOR FREE</button>
+       </a>
+     
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
