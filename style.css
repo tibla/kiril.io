@@ -1,18 +1,54 @@
 *{
-    margin: 0 auto;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(64, 161, 60);
 }
 .box{
-    width: 1024px;
-    height: 800px;
+    border: solid 3px black;
+    margin: auto;
+    width: 600px;
+    height: 700px;
+    margin-top: 100px;
+    background: rgb(45, 195, 222);
+    padding: 10px;
 }
-p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 10px;
+h1{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-span{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 5px;
+img{
+margin-left: 40px;
+    width: 500px;
+    height: 200px;
 }
+button{
+    width: 378px;
+height: 62px;
+background: #FF5A05;
+margin-left: 105px;
+font-weight: 500;
+ transition: 300ms;
+ font-size: 20px;
+line-height: 160%;
+letter-spacing: 0%;
+color: white;
+font-weight: 700;
+border-radius: 10px;
 
+}
+button:hover{
+font-size: 25px;
+background: #FF5A05;
+border: 2px solid black;
+ transition: 300ms;
+ -webkit-box-shadow: 0px 3px 18px 1px rgba(255,90,5,0.61);
+-moz-box-shadow: 0px 3px 18px 1px rgba(255,90,5,0.61);
+box-shadow: 0px 3px 18px 1px rgba(255,90,5,0.61);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
